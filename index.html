@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sikho with tailwind</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind customisation link -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              blush: "#cb2389",
+              blue: "#383d8a",
+              lblue: "#f0f6f8",
+              bolder: "#7abecf",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- responsive css -->
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <!-- header top -->
+      <section class="header-top bg-blush">
+        <div
+          class="flex justify-between items-center px-8 md:px-6 lg:px-16 py-4 md:py-0"
+        >
+          <div class="hidden md:block mobile-icon mt-5">
+            <a
+              href="https://play.google.com/store/apps/details?id=tech.shikho.android"
+              ><img
+                height="72px"
+                width="86px"
+                src="images/TopMobile.png"
+                alt="top-mobile"
+            /></a>
+          </div>
+          <div
+            class="mobile-title col-span-2 text-white font-bold text-xs md:text-sm lg:text-base md:ml-6"
+          >
+            দেশের সেরা লার্নিং এক্সপেরিয়েন্স পেতে আমাদের মোবাইল অ্যাপটি ডাউনলোড
+            করো এখনই!
+          </div>
+          <div class="google-play-icon">
+            <a
+              href="https://play.google.com/store/apps/details?id=tech.shikho.android"
+              ><img
+                src="images/playStoreIcon.png"
+                alt=""
+                class="border px-1 md:px-4 py-1 md:py-3 rounded-xl md:rounded-2xl"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <!-- navbar  -->
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <section class="banner bg-blue">
+        <div
+          class="banner-inner px-4 sm:px-8 md:px-6 lg:px-16 grid lg:grid-cols-2"
+        >
+          <!-- banner content -->
+
+          <div
+            class="banner-content text-white flex items-center pt-10 sm:pt-10"
+          >
+            <div class="banner-content-container space-y-8 py-24">
+              <h2 class="banner-title text-2xl lg:text-3xl font-bold">
+                শেখার নতুন জগতে তোমায় স্বাগতম!
+              </h2>
+              <p class="banner-paragraph text-base md:text-lg font-bold">
+                জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড প্রণীত সিলেবাস অনুযায়ী একজন
+                শিক্ষার্থীর বিষয়ভিত্তিক পড়াশোনার স্মার্ট সল্যুশন!
+              </p>
+              <div
+                class="banner-btns flex flex-col sm:flex-row gap-y-4 sm:gap-y-0"
+              >
+                <div class="btn-1">
+                  <button
+                    class="border-2 px-10 py-3 rounded-2xl mr-4 bg-white text-blush border-blush font-medium hover:bg-blush hover:text-white hover:border-white transition ease-linear"
+                  >
+                    ফ্রি কাউন্সেলিং নাও
+                  </button>
+                </div>
+                <div class="btn-2">
+                  <button
+                    class="border-2 px-4 py-3 rounded-2xl bg-blush font-medium hover:bg-white hover:text-blush hover:border-blush transition ease"
+                  >
+                    <i class="fa-brands fa-google-play"></i> অ্যাপ ডাউনলোড করো
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- banner image -->
+          <div class="banner-image">
+            <img src="images/home-banner.png" alt="girl holding phone" />
+          </div>
+        </div>
+      </section>
+      <!-- banner section end -->
+      <!-- এসএসসি/এইচএসসি group start-->
+      <section
+        class="এসএসসি/এইচএসসি-section px-4 sm:px-8 md:px-6 lg:px-16 mt-20"
+      >
+        <div class="এসএসসি/এইচএসসি-inner text-center">
+          <div class="inline-flex shadow-sm rounded-2xl" role="">
+            <a
+              href=""
+              class="py-4 sm:py-6 px-6 sm:px-14 flex items-center text-sm font-semibold text-white bg-blush rounded-l-2xl hover:bg-lblue hover:text-blue transition ease-linear"
+            >
+              এসএসসি
+            </a>
+            <a
+              href="#এইচএসসি"
+              class="py-4 sm:py-6 px-6 sm:px-14 flex items-centertext-sm font-semibold text-blue bg-lblue rounded-r-2xl hover:bg-blush hover:text-white transition ease-linear"
+            >
+              এইচএসসি
+            </a>
+          </div>
+        </div>
+        <!-- groups  -->
+        <div class="group mt-10" id="এইচএসসি">
+          <ul class="flex text-blue font-semibold border-b-2 pb-8">
+            <li><a href="" class="text-blush">বিজ্ঞান</a></li>
+            <li class="mx-10"><a href="">ব্যবসায় শিক্ষা</a></li>
+            <li><a href=""></a>মানবিক</li>
+          </ul>
+          <div class="text-field h-20 bg-lblue rounded-lg relative mt-14">
+            <i
+              class="fa-solid fa-caret-up fa-5x absolute -top-10 left-4 text-lblue"
+            ></i>
+          </div>
+        </div>
+      </section>
+      <!-- এসএসসি/এইচএসসি group end-->
+      <!-- latest course start -->
+      <section
+        class="latest-course px-4 sm:px-8 md:px-6 lg:px-16 my-20 bg-lblue"
+      >
+        <div class="latest-course-inner py-20">
+          <div class="section-title text-center">
+            <h2 class="text-3xl font-semibold text-blue">
+              আমাদের লেটেস্ট কোর্সসমূহ
+            </h2>
+          </div>
+          <!-- courses -->
+          <div class="courses py-20">
+            <ul class="flex border-b-2 pb-4">
+              <li>
+                <a href="" class="flex text-blush">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill=""
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.013 3.563H5.424a1.862 1.862 0 00-1.862 1.861v3.59c0 1.027.834 1.861 1.862 1.861h3.59a1.862 1.862 0 001.861-1.862V5.424a1.862 1.862 0 00-1.862-1.862zM18.576 3.563h-3.59a1.862 1.862 0 00-1.861 1.861v3.59c0 1.027.834 1.861 1.862 1.861h3.589a1.862 1.862 0 001.861-1.862V5.424a1.862 1.862 0 00-1.861-1.862zM9.013 13.125H5.424a1.862 1.862 0 00-1.862 1.862v3.589c0 1.028.834 1.861 1.862 1.861h3.59a1.862 1.862 0 001.861-1.861v-3.59a1.862 1.862 0 00-1.862-1.861zM16.781 20.438a3.656 3.656 0 100-7.313 3.656 3.656 0 000 7.313z"
+                      fill="#cf278d"
+                    ></path>
+                  </svg>
+
+                  <h3 class="ml-4">সকল কোর্স</h3>
+                </a>
+              </li>
+              <li class="mx-10">
+                <a href="" class="flex">
+                  <svg
+                    width="32"
+                    height="32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.537 4.571c-.197 0-.367.029-.536.086a2.861 2.861 0 00-2.202 2.229c-.085.171-.085.342-.085.542v15.715c0 2.371 1.892 4.285 4.235 4.285h15.527v-2.857H9.95c-.79 0-1.412-.628-1.412-1.428 0-.8.621-1.429 1.412-1.429h15.527V6c0-.8-.621-1.429-1.411-1.429h-1.412v8.572l-2.823-2.857-2.823 2.857V4.57h-8.47z"
+                      fill="#343b6d"
+                    ></path>
+                  </svg>
+
+                  <h3 class="ml-4">অ্যানিমেটেড লেসনস</h3>
+                </a>
+              </li>
+              <li>
+                <a href="" class="flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      clip-path="url(#icon-two_svg__clip0_181:1220)"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      fill="#343b6d"
+                    >
+                      <path
+                        d="M12 8.571A3.432 3.432 0 008.57 12 3.432 3.432 0 0012 15.428 3.432 3.432 0 0015.427 12a3.432 3.432 0 00-3.429-3.429z"
+                      ></path>
+                      <path
+                        d="M11.999.571C5.697.571.57 5.698.57 12 .57 18.302 5.697 23.428 12 23.428c6.302 0 11.428-5.126 11.428-11.428C23.427 5.698 18.301.57 12 .57zm0 17.633A6.211 6.211 0 015.795 12a6.211 6.211 0 016.204-6.204A6.211 6.211 0 0118.203 12a6.211 6.211 0 01-6.204 6.204z"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="icon-two_svg__clip0_181:1220">
+                        <path
+                          fill="#fff"
+                          transform="translate(.57 .571)"
+                          d="M0 0h22.857v22.857H0z"
+                        ></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <h3 class="ml-4">অনলাইন</h3>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- course btn -->
+          <div class="course-btn text-center">
+            <button
+              class="py-6 px-14 bg-blue text-white rounded-lg font-bold hover:bg-blush transition ease-linear"
+            >
+              সকল কোর্স দেখো
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- latest course end -->
+      <!-- featured section start -->
+      <section class="features-section px-4 sm:px-8 md:px-6 lg:px-16">
+        <div class="features-title">
+          <h2 class="text-3xl font-bold text-blue text-center mb-20">
+            পরীক্ষায় চমৎকার রেজাল্টের জন্য Shikho'র <br />
+            ফিচারগুলো দেখে নাও!
+          </h2>
+        </div>
+        <div class="features-inner grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- feature item -->
+          <div
+            class="featur bg-lblue rounded-2xl p-8 hover:-translate-y-4 transition ease-linear duration-300"
+          >
+            <div class="feature-image flex justify-center mb-6">
+              <svg
+                width="87"
+                height="76"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#diamond-icon_svg__clip0_175:36556)">
+                  <path
+                    d="M63.8 22.435l-5.243 6.072-15.319 39.88.263 6.834L87 22.435l-3.08-2.922H67.968l-4.168 2.922z"
+                    fill="#C11F7B"
+                  ></path>
+                  <path
+                    d="M0 22.435l43.5 52.786.566-6.046L28.121 27.67 23.2 22.435l-3.805-2.922H3.989L0 22.435z"
+                    fill="#C11F7B"
+                  ></path>
+                  <path
+                    d="M75.401 0l-4.64 3.389-8.011 15.604 1.051 3.602h23.2L75.401 0zM11.6 0l5.076 4.239 8.205 15.98-1.681 2.376H0L11.6 0z"
+                    fill="#ED2697"
+                  ></path>
+                  <path
+                    d="M64.484 22.422l-20.47 52.551-20.471-52.55 5.147-2.91h30.296l5.498 2.91z"
+                    fill="#EF61B2"
+                  ></path>
+                  <path
+                    d="M64.482 22.422l-20.47 52.55V19.514h14.972l5.498 2.91z"
+                    fill="#ED2697"
+                  ></path>
+                  <path
+                    d="M43.5 0l.471 3.747L59.12 20.428l4.898 2.167L75.741 0H43.5z"
+                    fill="#EF61B2"
+                  ></path>
+                  <path
+                    d="M43.499 0l.446 2.737-15.308 16.858-5.655 3L11.258 0h32.241z"
+                    fill="#EF61B2"
+                  ></path>
+                  <path
+                    d="M64.484 22.595H23.543L44.013 0l20.471 22.595z"
+                    fill="#FFB2DE"
+                  ></path>
+                  <path
+                    d="M64.482 22.595h-20.47V0l20.47 22.595z"
+                    fill="#F587C5"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="diamond-icon_svg__clip0_175:36556">
+                    <path fill="#fff" d="M0 0h87v76H0z"></path>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="featue-content text-center">
+              <h3 class="font-bold text-blue text-base mb-4">
+                স্টাডি ম্যাটেরিয়াল
+              </h3>
+              <p class="text-blue text-sm">
+                ভিডিও, স্মার্টনোট, লাইভ ক্লাস, কুইজ সহ আছে প্রয়োজনীয় সবকিছু!
+              </p>
+            </div>
+          </div>
+          <!-- feature item 2-->
+          <div
+            class="featur bg-lblue rounded-2xl p-8 hover:-translate-y-4 transition ease-linear duration-300"
+          >
+            <div class="feature-image flex justify-center mb-6">
+              <svg
+                width="80"
+                height="79"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="play_svg__a"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="80"
+                  height="79"
+                >
+                  <path
+                    d="M67.648 11.852C60.263 4.468 50.444.4 40 .4 29.556.4 19.737 4.468 12.352 11.852 4.967 19.237.9 29.056.9 39.5c0 10.444 4.067 20.263 11.452 27.648C19.737 74.533 29.556 78.6 40 78.6c10.444 0 20.263-4.067 27.648-11.452C75.033 59.763 79.1 49.944 79.1 39.5c0-10.444-4.067-20.262-11.452-27.648z"
+                    fill="#fff"
+                  ></path>
+                </mask>
+                <g mask="url(#play_svg__a)">
+                  <path
+                    d="M67.648 11.852C60.263 4.468 50.444.4 40 .4 29.556.4 19.737 4.468 12.352 11.852 4.967 19.237.9 29.056.9 39.5c0 10.444 4.067 20.263 11.452 27.648C19.737 74.533 29.556 78.6 40 78.6c10.444 0 20.263-4.067 27.648-11.452C75.033 59.763 79.1 49.944 79.1 39.5c0-10.444-4.067-20.262-11.452-27.648z"
+                    fill="#C11F7B"
+                  ></path>
+                </g>
+                <mask
+                  id="play_svg__b"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="5"
+                  y="5"
+                  width="70"
+                  height="69"
+                >
+                  <path
+                    d="M64.349 15.19C57.85 8.69 49.209 5.11 40.019 5.11c-9.191 0-17.832 3.58-24.33 10.078C9.188 21.688 5.61 30.33 5.61 39.52c0 9.191 3.579 17.832 10.077 24.33 6.5 6.5 15.14 10.078 24.33 10.078 9.191 0 17.832-3.579 24.33-10.078 6.5-6.498 10.079-15.139 10.079-24.33 0-9.19-3.58-17.83-10.078-24.33z"
+                    fill="#fff"
+                  ></path>
+                </mask>
+                <g mask="url(#play_svg__b)">
+                  <path
+                    d="M64.349 15.19C57.85 8.69 49.209 5.11 40.019 5.11c-9.191 0-17.832 3.58-24.33 10.078C9.188 21.688 5.61 30.33 5.61 39.52c0 9.191 3.579 17.832 10.077 24.33 6.5 6.5 15.14 10.078 24.33 10.078 9.191 0 17.832-3.579 24.33-10.078 6.5-6.498 10.079-15.139 10.079-24.33 0-9.19-3.58-17.83-10.078-24.33z"
+                    fill="#363E8A"
+                  ></path>
+                  <path
+                    d="M80.042-2.426h-39.57v83.853h39.57V-2.426z"
+                    fill="#4650AD"
+                  ></path>
+                  <path
+                    d="M54.736 37.951l-17.937-11.88a1.403 1.403 0 00-1.432-.068 1.385 1.385 0 00-.737 1.222v23.759c0 .511.283.981.736 1.222a1.4 1.4 0 001.433-.069l17.937-11.879a1.384 1.384 0 000-2.307z"
+                    fill="#fff"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="featue-content text-center">
+              <h3 class="font-bold text-blue text-base mb-4">
+                স্টাডি ম্যাটেরিয়াল
+              </h3>
+              <p class="text-blue text-sm">
+                ভিডিও, স্মার্টনোট, লাইভ ক্লাস, কুইজ সহ আছে প্রয়োজনীয় সবকিছু!
+              </p>
+            </div>
+          </div>
+          <!-- feature item 3-->
+          <div
+            class="featur bg-lblue rounded-2xl p-8 hover:-translate-y-4 transition ease-linear duration-300"
+          >
+            <div class="feature-image flex justify-center mb-6">
+              <svg
+                width="80"
+                height="75"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M40.076 48.706H13.119C6.382 48.706.9 54.391.9 61.378l3.047 1.326 38.682-1.1-2.553-12.898z"
+                  fill="#424A97"
+                ></path>
+                <path
+                  d="M42.629 61.378H.899c0 6.987 5.482 12.672 12.22 12.672h26.728l2.782-12.672z"
+                  fill="#363E8A"
+                ></path>
+                <path
+                  d="M79.098 54.101l-4.339-2.555H42.53c-5.09 0-9.215 4.279-9.215 9.558 0 .092.004.182.006.274l18.125 4.641 20.484-4.641c.004-4.013 3.218-7.277 7.168-7.277z"
+                  fill="#F7FCFF"
+                ></path>
+                <path
+                  d="M71.93 61.386v-.008H33.32c.14 5.151 4.208 9.283 9.21 9.283h33.542l3.024-1.999c-3.952 0-7.168-3.26-7.168-7.276z"
+                  fill="#ECF3FB"
+                ></path>
+                <path
+                  d="M40.794 54.101H79.1v-5.396H40.794c-6.738 0-12.22 5.685-12.22 12.673l3.047 1.325 2.156-1.325c0-4.013 3.148-7.277 7.017-7.277z"
+                  fill="#4650AD"
+                ></path>
+                <path
+                  d="M33.777 61.378h-5.203c0 6.987 5.482 12.672 12.22 12.672H79.1v-5.388l-38.306-.008c-3.87 0-7.017-3.264-7.017-7.276z"
+                  fill="#424A97"
+                ></path>
+                <path
+                  d="M72.465 58.632H40.822v2.746l15.386 1.094 15.724-1.094a7.344 7.344 0 01.533-2.746z"
+                  fill="#ECF3FB"
+                ></path>
+                <path
+                  d="M72.422 64.028a7.345 7.345 0 01-.49-2.642v-.008h-31.11v2.65h31.6z"
+                  fill="#E0E6F5"
+                ></path>
+                <path
+                  d="M55.196.95v10.983l-21.733 3.744-21.733-3.744V.95h43.466z"
+                  fill="#C11F7B"
+                ></path>
+                <path
+                  d="M25.305 48.567c-7.464 0-13.551-6.264-13.678-14.014l-.003-.248V11.79H58.92c5.685 0 10.31 4.822 10.31 10.748 0 5.85-4.507 10.624-10.091 10.746l-.219.002h-3.81v1.018c0 7.782-6.008 14.127-13.442 14.26l-.238.002H25.305zM58.92 17.212h-3.81v10.654h3.81c2.818 0 5.11-2.39 5.11-5.327 0-2.879-2.201-5.231-4.941-5.324l-.169-.003z"
+                  fill="#ED2697"
+                ></path>
+                <path
+                  d="M21.966 11.791v22.514l.002.248c.125 7.668 6.077 13.88 13.421 14.012l.238.002H25.286c-7.454 0-13.532-6.264-13.66-14.014l-.002-.248V11.79h10.342z"
+                  fill="#C11F7B"
+                ></path>
+              </svg>
+            </div>
+            <div class="featue-content text-center">
+              <h3 class="font-bold text-blue text-base mb-4">
+                স্টাডি ম্যাটেরিয়াল
+              </h3>
+              <p class="text-blue text-sm">
+                ভিডিও, স্মার্টনোট, লাইভ ক্লাস, কুইজ সহ আছে প্রয়োজনীয় সবকিছু!
+              </p>
+            </div>
+          </div>
+          <!-- feature item 4 -->
+          <div
+            class="featur bg-lblue rounded-2xl p-8 hover:-translate-y-4 transition ease-linear duration-300"
+          >
+            <div class="feature-image flex justify-center mb-6">
+              <svg
+                width="60"
+                height="70"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M37.55 67.394H15.363C6.965 67.394.119 60.717.1 52.51v-.14C.1 40.421 8.713 30.11 17.14 21.6c.371-.376.88-.587 1.41-.587h15.814c.53 0 1.04.211 1.41.587 8.426 8.51 17.04 18.822 17.04 30.77v.141c-.02 8.206-6.865 14.883-15.262 14.883z"
+                  fill="#4650AD"
+                ></path>
+                <path
+                  d="M34.363 21.013h-7.907v46.381H37.55c8.397 0 15.243-6.677 15.262-14.883v-.142c0-11.947-8.613-22.258-17.039-30.769a1.985 1.985 0 00-1.41-.587z"
+                  fill="#363E8A"
+                ></path>
+                <path
+                  d="M34.364 17.093H18.551c-.622 0-1.208-.29-1.582-.784-2.885-3.814-4.348-8.034-4.348-12.542V2.46c0-1.082.885-1.96 1.976-1.96h1.318c3.661 0 8.436 2.351 10.543 3.495C28.564 2.85 33.339.5 37 .5h1.318c1.092 0 1.977.878 1.977 1.96v1.307c0 4.508-1.464 8.728-4.35 12.542-.373.494-.958.784-1.58.784z"
+                  fill="#4650AD"
+                ></path>
+                <path
+                  d="M34.363 17.093c.622 0 1.208-.29 1.581-.784 2.886-3.814 4.349-8.034 4.349-12.542V2.46c0-1.082-.885-1.96-1.977-1.96h-1.318c-3.66 0-8.436 2.351-10.542 3.495v13.098h7.907z"
+                  fill="#363E8A"
+                ></path>
+                <path
+                  d="M16.573 15.77H36.34v6.404H16.572V15.77z"
+                  fill="#ED2697"
+                ></path>
+                <path
+                  d="M26.456 15.77h9.883v6.404h-9.883V15.77z"
+                  fill="#C11F7B"
+                ></path>
+                <path
+                  d="M28.913 42.754a60.94 60.94 0 01-.928-.333v-5.526c.572.195.868.48.907.52.599.67 1.633.737 2.316.148a1.623 1.623 0 00.16-2.304c-.564-.64-1.73-1.444-3.383-1.718v-.9a1.64 1.64 0 00-1.647-1.633 1.64 1.64 0 00-1.648 1.633v1.081c-.115.03-.231.062-.349.097-1.992.595-3.479 2.28-3.882 4.4-.369 1.943.267 3.823 1.659 4.905.666.519 1.48.994 2.573 1.488v7.175c-.798-.105-1.394-.364-2.328-.97a1.656 1.656 0 00-2.28.473 1.625 1.625 0 00.477 2.261c1.615 1.048 2.75 1.409 4.13 1.522v1.085a1.64 1.64 0 001.648 1.633 1.64 1.64 0 001.647-1.633V54.92a6.58 6.58 0 002.9-1.542 6.804 6.804 0 002.119-3.874c.517-3.048-1.089-5.698-4.091-6.75zm-4.762-2.2c-.414-.322-.593-1.001-.454-1.73.105-.55.418-1.19.994-1.588v3.689a6.223 6.223 0 01-.54-.37zm5.604 8.409c-.16.946-.76 1.943-1.77 2.484v-5.549c1.931.767 1.885 2.39 1.77 3.065z"
+                  fill="#FFFA8C"
+                ></path>
+                <path
+                  d="M28.914 42.754a60.551 60.551 0 01-.928-.333v-5.526c.572.195.868.48.907.52.599.67 1.633.737 2.316.148a1.623 1.623 0 00.16-2.304c-.564-.64-1.73-1.444-3.383-1.718v-.9c0-.863-.675-1.568-1.53-1.628v26.772a1.638 1.638 0 001.53-1.627V54.92a6.58 6.58 0 002.9-1.542 6.804 6.804 0 002.119-3.874c.517-3.048-1.089-5.698-4.091-6.75zm.842 6.209c-.16.946-.76 1.943-1.77 2.484v-5.549c1.932.767 1.885 2.39 1.77 3.065z"
+                  fill="#FFC178"
+                ></path>
+                <path
+                  d="M47.111 68.5c5.959 0 10.79-4.789 10.79-10.696 0-5.908-4.831-10.697-10.79-10.697-5.958 0-10.789 4.79-10.789 10.697 0 5.907 4.83 10.697 10.79 10.697z"
+                  fill="#ED2697"
+                  stroke="#ED2697"
+                  stroke-width="3"
+                ></path>
+                <path
+                  d="M50.635 61.298l-7.048-6.988m0 6.988l7.048-6.988-7.048 6.988z"
+                  stroke="#fff"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="featue-content text-center">
+              <h3 class="font-bold text-blue text-base mb-4">
+                স্টাডি ম্যাটেরিয়াল
+              </h3>
+              <p class="text-blue text-sm">
+                ভিডিও, স্মার্টনোট, লাইভ ক্লাস, কুইজ সহ আছে প্রয়োজনীয় সবকিছু!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- featured section end -->
+      <!-- solution section start -->
+      <section class="solution-section bg-lblue mt-20">
+        <div class="solution-inner px-4 sm:px-8 md:px-6 lg:px-16 py-20">
+          <div class="section-title">
+            <h2 class="text-3xl font-bold text-blue text-center my-20">
+              তোমার প্রয়োজন অনুযায়ী আমাদের <br />
+              আছে দুটি স্মার্ট সল্যুশন
+            </h2>
+          </div>
+          <div class="solutions grid lg:grid-cols-2 gap-10">
+            <!------------------------- solution-card 1--------------------------------------------->
+            <div class="solution-card ">
+              <div class="solution-header text-center rounded-t-2xl">
+                <a href="" class="bg-slate-300 block py-5 text-2xl text-blue font-bold rounded-t-2xl hover:bg-blush hover:text-white">
+                  সল্যুশন- ১</a>
+              </div>
+            <div class="solution-body bg-white p-7 rounded-b-2xl">
+              <div class="solution-image">
+                <img
+                  src="images/solutionThumb.png"
+                  alt="interactive"
+                  class="rounded-2xl w-full"
+                />
+              </div>
+              <div class="solution-content lg:flex justify-between py-10">
+                <div class="solution-content-left text-right">
+                  <ul class="space-y-4">
+                    <!-- item 1 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+                        <h3 class="font-medium text-blue ml-3">
+                          অ্যানিমেটেড ভিডিও লেসন
+                        </h3>
+                      </a>
+                    </li>
+
+                    <!-- item 2 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+
+                        <h3 class="font-medium text-blue ml-3">
+                           প্রবলেম সলভিং লেসন
+                        </h3>
+                      </a>
+                    </li>
+
+                    <!-- item 3 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+
+                        <h3 class="font-medium text-blue ml-3">
+                          কুইজ এবং এক্সাম
+                        </h3>
+                      </a>
+                    </li>
+                    <!-- item 4 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+
+                        <h3 class="font-medium text-blue ml-3">
+                          বোর্ড পেপার এবং মক এক্সাম
+                        </h3>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- ------------solution content-right ----------------------------------->
+                <!-- item 1 -->
+                <div class="solution-content-right text-right">
+                  <ul class="space-y-4">
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+                        <h3 class="font-medium text-blue ml-3">স্মার্ট নোট</h3>
+                      </a>
+                    </li>
+
+                    <!-- item 2 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+
+                        <h3 class="font-medium text-blue ml-3">অ্যানালাইসিস</h3>
+                      </a>
+                    </li>
+
+                    <!-- item 3 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+                        <h3 class="font-medium text-blue ml-3">ড্যাশবোর্ড</h3>
+                      </a>
+                    </li>
+
+                    <!-- item 4 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+
+                        <h3 class="font-medium text-blue ml-3">
+                          ভিডিও ডাউনলোড
+                        </h3>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="solution-btn text-center rounded-2xl text-blue font-semibold mt-4"
+              >
+                <a
+                  href=""
+                  type="button"
+                  class="bg-lblue block py-4 rounded-2xl hover:bg-red-400 hover:text-white transition duration-300 ease-linear"
+                >
+                  বিস্তারিত দেখো
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------------solution-card 2------------------------------------->
+          <div class="solution-card rounded-2xl">
+            <div
+              class="solution-head"
+            >
+              <a href="" class="text-2xl font-bold text-blue text-center py-5 block bg-slate-300 rounded-t-2xl hover:bg-blue hover:text-white">সল্যুশন- ২</a>
+            </div>
+            <div class="solution-body bg-white p-7 rounded-b-2xl">
+              <div class="solution-image">
+                <img
+                  src="images/interactive.png"
+                  alt="interactive"
+                  class="rounded-2xl w-full"
+                />
+              </div>
+              <div class="solution-content lg:flex justify-between py-10">
+                <div class="solution-content-left text-right">
+                  <ul class="space-y-4">
+                    <!-- item 1 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+                        <h3 class="font-medium text-blue ml-3">
+                          লাইভ ক্লাস
+                        </h3>
+                      </a>
+                    </li>
+
+                    <!-- item 2 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+
+                        <h3 class="font-medium text-blue ml-3">
+                          অ্যানালাইসিস
+                        </h3>
+                      </a>
+                    </li>
+
+                    <!-- item 3 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+
+                        <h3 class="font-medium text-blue ml-3">
+                         ভ্যাসবোর্ড 
+                        </h3>
+                      </a>
+                    </li>
+                    <!-- item 4 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+
+                        <h3 class="font-medium text-blue ml-3">
+                        ভিডিও ডাউনলোড
+                        </h3>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- ---------------solution content- right -->
+                <!-- item 1 -->
+                <div class="solution-content-right text-right">
+                  <ul class="space-y-4">
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+                        <h3 class="font-medium text-blue ml-3">ওয়েব পোর্টাল </h3>
+                      </a>
+                    </li>
+
+                    <!-- item 2 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+
+                        <h3 class="font-medium text-blue ml-3">লাইভ পোলিং</h3>
+                      </a>
+                    </li>
+
+                    <!-- item 3 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+                        <h3 class="font-medium text-blue ml-3">রেকর্ডেড ক্লাস</h3>
+                      </a>
+                    </li>
+
+                    <!-- item 4 -->
+                    <li>
+                      <a href="" class="flex items-center">
+                        <svg
+                          width="12"
+                          height="12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.953 9.219l-1.438-1.73a6.223 6.223 0 01-1.35-5.035L9.547.237a.202.202 0 00-.329-.19l-1.73 1.439a6.224 6.224 0 01-5.035 1.35L.236 2.453a.202.202 0 00-.19.328l1.44 1.73a6.224 6.224 0 011.349 5.035l-.382 2.217a.202.202 0 00.329.19l1.73-1.44a6.224 6.224 0 015.034-1.348l2.218.38a.202.202 0 00.19-.327z"
+                            fill="#CF278D"
+                          ></path>
+                        </svg>
+
+                        <h3 class="font-medium text-blue ml-3">
+                          লেকচার স্লাইড
+                        </h3>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="solution-btn text-center rounded-2xl text-blue font-semibold mt-4"
+              >
+                <a
+                  href=""
+                  type="button"
+                  class="bg-lblue block py-4 rounded-2xl hover:bg-red-400 hover:text-white transition duration-300 ease-linear"
+                >
+                  বিস্তারিত দেখো
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- solution section end -->
+      <!-- blue-circle section -->
+      <section class="blue-section">
+        <div class="blue-section-inner h-52 relative z-200 overflow-y-scroll">
+          
+          <div class="circle h-96 w-96 bg-bolder rounded-full absolute right-36 -top-10">
+          </div>
+        </div>
+      </section>
+      <!-- blue-circle end -->
+      <!-- blog one start -->
+      <section class="blog-one bg-lblue pt-24 pb-36">
+        <div class="blog-one-inner text-center">
+          <h3 class="text-3xl font-bold text-blue">চমৎকার অ্যানিমেটেড ভিডিও উদাহরণ ও লেসনে <br> কঠিন সব টপিক হবে পানির মতো সহজ</h3>
+        </div>
+      </section>
+      <!-- blog one end -->
+      <!-- blog two start -->
+      <section class="blog-two pt-24 pb-36">
+        <div class="blog-one-inner text-center">
+          <h3 class="text-3xl font-bold text-blue">সাবজেক্ট এক্সপার্ট মেন্টরদের ইন্টারঅ্যাকটিভ লাইভ ক্লাসে <br> কনসেপ্ট লার্নিং এবং প্রবলেম সলভিং</h3>
+        </div>
+      </section>
+      <!-- blog two end -->
+    </main>
+    <!-- main end -->
+  </body>
+</html>
